@@ -10,6 +10,7 @@ This repository contains hands-on networking labs completed while learning Cisco
 |----------|--------|
 | Project 1 - Basic LAN | ✅ |
 | Project 2 - Basic Router Configuration | ✅ |
+| Project 3 - DHCP and DNS Configuration | ✅ |
 ---
 
 ## Technologies
@@ -19,6 +20,8 @@ This repository contains hands-on networking labs completed while learning Cisco
 - IPv4
 - LAN Switching
 - Basic Routing
+- DHCP
+- DNS
 ---
 
 ## Skills
