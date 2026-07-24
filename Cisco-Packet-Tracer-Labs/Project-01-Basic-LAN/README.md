@@ -8,7 +8,7 @@ Build a basic Local Area Network (LAN) using a Cisco switch and two PCs, assign 
 
 ## Network Topology
 
-topology.png
+![Network Topology](topology.JPG)
 
 ---
 
