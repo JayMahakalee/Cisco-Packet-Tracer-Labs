@@ -8,7 +8,7 @@ Configure a Cisco router to connect two different LANs and enable communication 
 
 ## 🖥 Network Topology
 
-![Topology](topology.png)
+![Network Topology](topology.jpg)
 
 ---
 
