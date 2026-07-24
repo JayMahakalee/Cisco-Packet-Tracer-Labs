@@ -8,7 +8,7 @@ Configure static routing between two routers to enable communication between dif
 
 ## Network Topology
 
-![Topology](topology.png)
+![Topology](topology.PNG)
 
 ---
 
