@@ -8,7 +8,7 @@ Configure VLANs on a Cisco switch and enable communication between different VLA
 
 ## 🖥 Network Topology
 
-![Topology](topology.png)
+![Topology](topology.PNG)
 
 ---
 
