@@ -13,8 +13,9 @@ DHCP
 DNS
 Extended ACL
 Inter-VLAN Routing
-Network Topology
 
+Network Topology
+![Network Topology](topology.PNG)
 
 Features
 Multi-site Enterprise Network
