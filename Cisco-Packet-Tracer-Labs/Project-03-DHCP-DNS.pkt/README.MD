@@ -8,7 +8,7 @@ Configure a Cisco router, switch, and server to provide automatic IP address ass
 
 ## 🖥 Network Topology
 
-![Topology](topology.png)
+![Topology](topology.PNG)
 
 ---
 
