@@ -15,9 +15,7 @@ Extended ACL
 Inter-VLAN Routing
 Network Topology
 
-Insert your screenshot here.
 
-![Network Topology](topology.png)
 Features
 Multi-site Enterprise Network
 Head Office & Branch Office Connectivity
