@@ -1,81 +1,130 @@
-Enterprise Network Design and Implementation
-Project Overview
+# Project 8 - Enterprise Network Design and Implementation
 
-Designed and implemented a multi-site enterprise network connecting a Head Office and a Branch Office using Cisco Packet Tracer. The project demonstrates VLAN segmentation, inter-VLAN routing, dynamic routing, centralized network services, and access control for secure communication.
+## Objective
 
-Technologies Used
-Cisco Packet Tracer
-Cisco IOS
-VLANs
-Router-on-a-Stick
-OSPF
-DHCP
-DNS
-Extended ACL
-Inter-VLAN Routing
+Design and implement a multi-site enterprise network connecting a Head Office and a Branch Office using Cisco Packet Tracer with VLANs, Router-on-a-Stick, OSPF, DHCP, DNS, and Extended ACLs.
 
-Network Topology
-![Network Topology](topology.PNG)
+---
 
-Features
-Multi-site Enterprise Network
-Head Office & Branch Office Connectivity
-VLAN Segmentation
-Router-on-a-Stick
-Dynamic Routing using OSPF
-DHCP Server with DHCP Relay (ip helper-address)
-Centralized DNS Server
-Extended ACL for Department-Based Access Control
-End-to-End Network Connectivity
-Enterprise Network Troubleshooting
-VLAN Configuration
-VLAN	Department	Network
-10	HR	192.168.10.0/24
-20	IT	192.168.20.0/24
-30	Sales	192.168.30.0/24
-40	Marketing	192.168.40.0/24
-60	Branch Office	192.168.60.0/24
-Routing
-Router-on-a-Stick configured using IEEE 802.1Q encapsulation.
-OSPF Area 0 configured between Head Office and Branch Office.
-Dynamic route exchange verified.
-DHCP
-Centralized DHCP Server
-DHCP Pools for all VLANs
-DHCP Relay configured using ip helper-address
-DNS
-Centralized DNS Server
-Hostname resolution verified across VLANs
-Security
+## Network Topology
 
-Extended ACL configured with the following policy:
+![Topology](topology.PNG)
 
-HR → Full Access
-IT → Full Access
-Sales → Cannot Access HR
-Marketing → Cannot Access HR
-Sales ↔ Marketing Allowed
-Branch Office → Full Access
-Verification
+---
 
-Verified using:
+## Devices Used
 
-show ip interface brief
+- 2 × Cisco 2911 Routers
+- 2 × Cisco 2960 Switches
+- 1 × Server
+- Multiple PCs
+
+---
+
+## Technologies Used
+
+- Cisco Packet Tracer
+- Cisco IOS
+- VLANs
+- Router-on-a-Stick
+- OSPF
+- DHCP
+- DNS
+- Extended ACL
+- Inter-VLAN Routing
+
+---
+
+## VLAN Configuration
+
+| VLAN | Department | Network |
+|------|------------|----------------|
+| 10 | HR | 192.168.10.0/24 |
+| 20 | IT | 192.168.20.0/24 |
+| 30 | Sales | 192.168.30.0/24 |
+| 40 | Marketing | 192.168.40.0/24 |
+| 60 | Branch Office | 192.168.60.0/24 |
+
+---
+
+## Configuration
+
+### Head Office
+
+- Configured VLANs for HR, IT, Sales and Marketing
+- Configured Router-on-a-Stick using IEEE 802.1Q
+- Configured DHCP Server
+- Configured DNS Server
+- Configured OSPF Area 0
+
+### Branch Office
+
+- Configured Branch VLAN
+- Connected to Head Office using OSPF
+- Configured DHCP Relay (ip helper-address)
+
+### Security
+
+- Configured Extended ACL
+- HR and IT can communicate with all departments
+- Sales and Marketing are restricted from accessing HR
+- Sales and Marketing can communicate with each other
+
+---
+
+## Verification
+
+Verify routing
+
+```bash
 show ip route
 show ip ospf neighbor
+```
+
+Verify VLANs
+
+```bash
 show vlan brief
 show interfaces trunk
+```
+
+Verify DHCP
+
+```bash
+show ip dhcp binding
+```
+
+Verify ACL
+
+```bash
 show access-lists
+```
+
+Verify Connectivity
+
+```cmd
 ping
 ipconfig
-Skills Demonstrated
-Enterprise Network Design
-Layer 2 Switching
-VLAN Configuration
-Inter-VLAN Routing
-OSPF Dynamic Routing
-DHCP & DHCP Relay
-DNS Configuration
-Extended ACL
-Enterprise Network Troubleshooting
-Cisco IOS CLI
+```
+
+---
+
+## Skills Learned
+
+- Enterprise Network Design
+- VLAN Configuration
+- Router-on-a-Stick
+- Inter-VLAN Routing
+- OSPF Dynamic Routing
+- DHCP Configuration
+- DHCP Relay (ip helper-address)
+- DNS Configuration
+- Extended ACL
+- Cisco IOS CLI
+- Enterprise Network Troubleshooting
+
+---
+
+## Outcome
+
+Successfully designed and implemented a secure multi-site enterprise network with centralized DHCP and DNS services, dynamic routing using OSPF, VLAN segmentation, Router-on-a-Stick, and Extended ACLs. Verified end-to-end connectivity and enforced departmental access policies through comprehensive network testing.
